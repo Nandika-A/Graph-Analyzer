@@ -17,7 +17,7 @@ Ensure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Nandika-A/Graph-Analyzer.git
+git clone https://github.com/<your_username>/Graph-Analyzer.git
 cd Graph-Analyzer
 ```
 
@@ -32,12 +32,6 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 ```bash
 pip install -r requirements.txt
-```
-
-Otherwise you can manually install the dependencies as:
-
-```bash
-pip install django opencv-python numpy scikit-learn
 ```
 
 ### Apply Migrations
