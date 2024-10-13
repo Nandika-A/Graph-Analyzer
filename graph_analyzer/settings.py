@@ -112,14 +112,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-STATIC_URL = 'static/'
+
+STATIC_URL = "static/"
 
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static/'),
 ]
 
 MEDIA_URL = 'images/'
-MEDIA_ROOT=os.path.join(BASE_DIR,'images')
+MEDIA_ROOT=os.path.join(BASE_DIR,'images/')
 
 
 # Default primary key field type
@@ -157,9 +158,7 @@ EMAIL_HOST_PASSWORD=os.getenv("EMAIL_HOST_PASSWORD")
 ACCOUNT_AUTHENTICATION_METHOD='username_email'
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS=10
 ACCOUNT_EMAIL_REQUIRED=True
-ACCOUNT_EMAIL_VERIFICATION='none'
-#changed None to none
-
+ACCOUNT_EMAIL_VERIFICATION='None'
 
 ACCOUNT_FORMS = {
 'signup': 'stellarledger.forms.CustomSignupForm',
